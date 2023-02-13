@@ -85,10 +85,15 @@ main .list .course-list.active{
 }
 main .list .course-list .course-item{
     text-align: left;
-    border-bottom: 1px solid #ffffff73;
+    /* border-bottom: 1px solid #ffffff73; */
     transition: var(--main-transition);
 }
-
+main .list .course-list.black .course-item:not(:last-of-type){
+    border-bottom: 1px solid #ffffff73;
+}
+main .list .course-list.green .course-item:not(:last-of-type){
+    border-bottom: 1px solid #3a3a3a73;
+}
 main .list .course-list .course-item a{
     color: #fff;
     width: 100%;
@@ -103,7 +108,7 @@ main .list .main-item.black  .course-item a{
 main button{
     all: unset;
     outline: none;
-    border: 1px solid var(--dark-color);
+    /* border: 1px solid var(--dark-color); */
     padding: 10px 20px;
     border-radius: 5px;
     background-color: var(--dark-color);
@@ -150,3 +155,18 @@ main button a.pre i{
 footer{
     margin-top: 100px;
 }
+
+
+
+/* start dark mode */
+.dark main .list .black{
+    background-color: #080f20;
+}
+.dark main .list .green{
+background-color: #7afbff;
+color: black;
+}
+.dark main button{
+    background-color: #080f20;
+}
+/* end dark mode */
