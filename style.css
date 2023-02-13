@@ -116,6 +116,38 @@ transform: rotate(1turn);
     font-size: 53px;
   }
 }
+/* start dark mode */
+.mode{
+  position: fixed;
+  left: 0;
+  top: 50%;
+  border-radius: 0 20px 20px 0;
+  z-index: 8;
+  cursor: pointer;
+}
+@media (max-width:400px) {
+  .mode{
+    top: 65%;
+  }
+}
+.mode i{
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+}
+.mode .moon{
+  color: #fff;
+  background-color: var(--dark-color);
+}
+.mode .sun{
+  color: #000;
+  background-color: #fff;
+  display: none;
+}
+/* end dark mode */
 /* end components */
 /* start loader */
 .loader{
@@ -476,7 +508,7 @@ gap: 20px;
     cursor: pointer;
     transform: translateY(100%);
     opacity: 0;
-    transition: var(--anim-transition);
+    transition: var(--main-transition);
 }
 .notes .box.two{
 transition-delay: 0.3s;
@@ -615,3 +647,73 @@ footer{
   font-size: 18px;
 }
 /* end footer */
+
+
+/* start dark */
+.dark{
+  background-color: #151515;
+  color: #fff;
+}
+.dark header ul li a{
+  color: #fff;
+}
+.dark .overlay{
+  background-color: #080f20;
+}
+.dark .overlay .fa-xmark:hover{
+  color: #fff;
+}
+.dark .overlay ul li a:hover{
+  color: var(--main-color);
+}
+.dark .landing .text p{
+  color: #ffffff9a;
+}
+.dark .landing .text a{
+  background-color: #7afbff;
+  color: #151515;
+}
+.dark .landing .text a::before{
+  background-color: #e9e7e754;
+}
+.dark .main-title h2{
+color: var(--main-color);
+}
+.dark .main-title i{
+  color: #fff;
+}
+.dark .landing .text .h1-con span,.landing .text .p-con span{
+  background-color: #7afbff;
+}
+.dark .about .content .p-about span{
+  background-color: #7afbff;
+}
+.dark .notes .box{
+  background-color: #ffffed;
+}
+.dark .notes .box .num span{
+  color: var(--sec-color)
+}
+.dark .notes .box:hover .num span{
+  color: var(--dark-color);
+}
+.dark .contact .email a{
+  color: var(--sec-color);
+}
+.dark .contact .email a:hover{
+  color: #fff;
+}
+.dark .contact .social .icons a i{
+  color: #a5a5a5;
+}
+.dark .contact .social .icons a i:hover{
+  color: #fff;
+}
+.dark .important p{
+  color: black;
+}
+.dark footer{
+  color: #333;
+  background-color: #fff;
+}
+/* end dark */
