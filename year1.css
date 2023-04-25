@@ -21,27 +21,7 @@ main .list{
     margin: auto;
     position: relative;
 }
-main .list::before{
-    content: "";
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: #49d49cc4;
-z-index: 2;
-border-radius: 7px;
-}
-main .list::after{
-    content: "Soon...";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: #000;
-    z-index: 3;
-    font-size: 30px;
-}
+
 @media (max-width:992px) {
     main .list{
         width: 90%;
