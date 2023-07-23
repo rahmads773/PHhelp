@@ -14,10 +14,6 @@ menu.addEventListener("click",(eo) => {
     <li><a href="index.html" class="link">Home</a></li>
     <li><a href="#about" class="link">About</a></li>
     <li><a href="#notes" class="link">Notes</a></li>
-    <li>
-    <a href="#bac">Bac</a>
-    <img src="ph design/new.png" alt="new" class="new">
-  </li>
     <li><a href="#contact" class="link">Contact</a></li>
 </ul>
 <i class="fa-solid fa-pills"></i>
@@ -28,10 +24,6 @@ menu.addEventListener("click",(eo) => {
     <li><a href="index.html" class="link">Home</a></li>
     <li><a href="index.html#about" class="link">About</a></li>
     <li><a href="index.html#notes" class="link">Notes</a></li>
-    <li>
-    <a href="index.html#bac">Bac</a>
-    <img src="ph design/new.png" alt="new" class="new">
-  </li>
     <li><a href="index.html#contact" class="link">Contact</a></li>
 </ul>
 <i class="fa-solid fa-pills"></i>
