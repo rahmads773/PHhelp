@@ -5,28 +5,28 @@ const fade = (ele) => {
  }
 
 // toggle menu
-let menu = document.querySelector(".menu i")
+let menu = document.querySelector(".menu")
 let overlay = document.querySelector(".overlay")
 menu.addEventListener("click",(eo) => { 
     let list = `
-    <i class="fa-solid fa-xmark"></i>
+    <i class="fa-solid fa-x close"></i>
     <ul>
     <li><a href="index.html" class="link">Home</a></li>
     <li><a href="#about" class="link">About</a></li>
     <li><a href="#notes" class="link">Notes</a></li>
     <li><a href="#contact" class="link">Contact</a></li>
 </ul>
-<i class="fa-solid fa-pills"></i>
+<img src="ph design/pills-svgrepo-com (4).svg" class="pills" alt="pills">
     `
       let listSecond = `
-    <i class="fa-solid fa-xmark"></i>
+      <i class="fa-solid fa-x close"></i>
     <ul>
     <li><a href="index.html" class="link">Home</a></li>
     <li><a href="index.html#about" class="link">About</a></li>
     <li><a href="index.html#notes" class="link">Notes</a></li>
     <li><a href="index.html#contact" class="link">Contact</a></li>
 </ul>
-<i class="fa-solid fa-pills"></i>
+<img src="ph design/pills-svgrepo-com (4).svg" class="pills" alt="pills">
     `
     if(overlay.classList.contains("secondary")){
         overlay.innerHTML = listSecond
