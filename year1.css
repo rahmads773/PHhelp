@@ -1,3 +1,6 @@
+.f-basis{
+    flex-basis: 60%;
+}
 /* start main */
 main{
     min-height: calc(100vh - 140px);
@@ -15,6 +18,36 @@ main .main-title{
 main .container{
     text-align: center;
 }
+/* start info */
+main .new-info{
+    display: flex;
+    width: 100%;
+    margin: 50px auto 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffefd7e7;
+    padding: 20px 10px;
+}
+@media (max-width:420px) {
+    main .new-info{
+     flex-wrap: wrap;
+     text-align: center;
+     flex-direction: column;
+    }
+}
+main .new-info .icon-info img{
+width: 80px;
+}
+main .new-info .text-info{
+    line-height: 1.7;
+}
+main .new-info .text-info h4{
+    margin-bottom: 10px;
+}
+
+/* end info */
+
 /* start list */
 main .list{
     width: 60%;
@@ -117,10 +150,8 @@ main .list .main-item.black  .course-item a{
 main button{
     all: unset;
     outline: none;
-    /* border: 1px solid var(--dark-color); */
-    padding: 10px 20px;
+    padding: 10px 12px;
     border-radius: 5px;
-    background-color: var(--dark-color);
     margin: 40px auto 0;
 
 }
@@ -150,14 +181,13 @@ main button a{
     font-weight: bold;
     font-size: 18px;
 }
-main button a i{
-    font-size: 20px;
+main button a img{
+    width: 45px;
 }
-main button a.next i{
-    margin-left: 10px;
-}
-main button a.pre i{
-    margin-right: 10px;
+main button a.active img{
+    background-color: #acf5cc;
+    border-radius: 50%;
+    padding: 5px;
 }
 /* end main */
 
@@ -168,6 +198,10 @@ footer{
 
 
 /* start dark mode */
+.dark main .new-info{
+    background-color: #ffefd7;
+    color: #161616;
+}
 .dark main .list .black{
     background-color: #080f20;
 }
@@ -181,7 +215,12 @@ color: black;
 .dark main .list .main-item.sub a{
     color: var(--dark-color);
 }
-.dark main button{
-    background-color: #080f20;
+.dark main button a img{
+    background-color: aliceblue;
+    border-radius: 50%;
+    padding: 5px;
+}
+.dark main button a.active img{
+    background-color: #7afbff;
 }
 /* end dark mode */
