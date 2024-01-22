@@ -11,7 +11,7 @@ let aboutImg = document.querySelector(".about .image img")
 let aboutSpan = document.querySelectorAll(".about .content .p-about span")
 let aboutText = document.querySelector(".about .content")
 let noteBoxes =  document.querySelectorAll(".notes .box")
-// let loader =  document.querySelector(".loader")
+let videos =  document.querySelectorAll(".videos .chan-box")
 
 const come = (item) => { 
     item.style.transform = "translate(0)"
@@ -57,4 +57,10 @@ noteBoxes.forEach(ele => {
     }    
 });
 
+    videos.forEach(ele => {
+    if(window.scrollY >= ele.offsetTop - 650){
+   come(ele)
+
+    }    
+});
  }
