@@ -641,8 +641,96 @@ z-index: 2;
 }
 /* end notes */
 
+/* start videos */
+
+.video{
+  text-align: center;
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.videos .container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.videos .chan-box{
+  position: relative;
+  min-width: 25%;
+  background-position: center;
+  background-size: cover;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+
+  transform: translateY(100%);
+  opacity: 0;
+  transition: var(--anim-transition);
+}
+@media (max-width:992px) {
+  .videos .chan-box{
+    min-width: 45%;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width:567px) {
+  .videos .chan-box{
+    min-width: 100%;
+    text-align: center;
+  }
+}
+.videos .chan-box h3{
+  margin: 5px 0 3px;
+}
+.videos .chan-box .rating img{
+  width: 20px;
+}
+.videos .chan-box .chan-about{
+margin: 20px 0 30px;
+line-height: 1.4;
+}
+.videos .chan-box .chan-foot{
+  display: flex;
+  justify-content: space-between;
+}
+
+.videos .chan-box .chan-foot .follow a{
+color: var(--dark-color);
+padding:5px 7px;
+border: 1px solid var(--dark-color);
+border-radius: 2px;
+transition: var(--main-transition);
+}
+@media (max-width:567px) {
+  .videos .chan-box .chan-foot {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media (max-width:567px) {
+  .videos .chan-box .chan-foot .follow {
+width: 100%;
+  }
+}
+@media (max-width:567px) {
+  .videos .chan-box .chan-foot .follow a{
+display: block;
+width: 100%;
+padding: 10px;
+  }
+}
+.videos .chan-box .chan-foot .follow a:hover{
+background-color: var(--dark-color);
+color: #fff;
+border-color: #fff;
+}
+.videos .chan-box .chan-foot img{
+  width: 100px;
+}
 
 
+/* end videos */
 
 
 
@@ -829,8 +917,11 @@ color: var(--main-color);
 .dark .notes .box:hover .num span{
   color: var(--dark-color);
 }
-.dark  .bac-notes a{
-  background-color: #ffffed;
+.dark .videos{
+  color: #000;
+}
+.dark .videos .chan-box{
+ background-color: #ffffed;
 }
 .dark .contact .email a{
   color: var(--sec-color);
