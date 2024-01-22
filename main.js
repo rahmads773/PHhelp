@@ -14,6 +14,7 @@ menu.addEventListener("click",(eo) => {
     <li><a href="index.html" class="link">Home</a></li>
     <li><a href="#about" class="link">About</a></li>
     <li><a href="#notes" class="link">Notes</a></li>
+    <li><a href="#videos" class="link">Youtube</a></li>
     <li><a href="#contact" class="link">Contact</a></li>
 </ul>
 <img src="ph design/pills-svgrepo-com (4).svg" class="pills" alt="pills">
@@ -24,6 +25,7 @@ menu.addEventListener("click",(eo) => {
     <li><a href="index.html" class="link">Home</a></li>
     <li><a href="index.html#about" class="link">About</a></li>
     <li><a href="index.html#notes" class="link">Notes</a></li>
+    <li><a href="index.html#videos" class="link">Youtube</a></li>
     <li><a href="index.html#contact" class="link">Contact</a></li>
 </ul>
 <img src="ph design/pills-svgrepo-com (4).svg" class="pills" alt="pills">
