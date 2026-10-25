@@ -109,6 +109,9 @@ main .list .black{
 main .list .green{
     background-color: var(--sec-color);
 }
+main .list .neww{
+    background-color: #9AD2CB;
+}
 main .list .main-item .fa-caret-down{
     font-size: 20px;
     transition: var(--main-transition);
