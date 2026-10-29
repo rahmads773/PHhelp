@@ -610,7 +610,13 @@ position: relative;
 .notes .box:hover .num span{
 color: #2f2e41;
 }
+.notes .box .new{
+      position: absolute;
+    width: 35px;
+    right: 5px;
+    top: 5px;
 
+}
 .notes .box h3{
   color: var(--text-color);
   font-size: 28px;
