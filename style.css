@@ -108,7 +108,7 @@ transform: rotate(1turn);
 }
 @media (max-width:567px) {
   .main-title h2{
-    font-size: 57px;
+    font-size: 55px;
   }
 }
 @media (max-width:290px) {
