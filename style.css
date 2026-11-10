@@ -649,7 +649,7 @@ z-index: 2;
 
 /* start videos */
 
-.video{
+.videos{
   text-align: center;
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
