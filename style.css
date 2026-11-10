@@ -91,7 +91,7 @@ background-color: var(--sec-color);
 }
 .main-title i{
   position: absolute;
-  font-size: 40px;
+  font-size: 35px;
   left: -25px;
   top: -15px;
   color: #5649469e;
@@ -108,12 +108,12 @@ transform: rotate(1turn);
 }
 @media (max-width:567px) {
   .main-title h2{
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 @media (max-width:290px) {
   .main-title h2{
-    font-size: 53px;
+    font-size: 45px;
   }
 }
 /* start dark mode */
